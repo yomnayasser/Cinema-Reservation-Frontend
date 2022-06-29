@@ -1,0 +1,9 @@
+.cardContainer{
+    width: 13vw;    
+}
+
+.imgStyle{
+    width:20vw;
+    height:50vh;
+    cursor: pointer;
+}

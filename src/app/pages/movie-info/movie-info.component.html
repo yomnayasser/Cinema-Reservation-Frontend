@@ -1,0 +1,35 @@
+<div class="card">
+    <div class="card-horizontal">
+        <div class="img-square-wrapper">
+            <img class="" src='http://localhost:3000/{{singleMovie.image}}' alt="Card image cap">
+        </div>
+        <div class="card-body">
+            <h4 class="card-title">{{singleMovie.name}}</h4>
+
+           <div>
+            <span *ngFor="let category of singleMovie.category; let i = index">
+                {{category.name}}
+               <ng-container *ngIf="i != singleMovie.category.length-1">,</ng-container>
+            </span>
+            <span> | {{singleMovie.runTime}} <i class="fa-solid fa-clock"></i></span>
+           </div>
+
+           <div>
+               <span>Directors:</span>
+               <span *ngFor="let director of singleMovie.directors; let i = index">
+                {{director.name}}
+               <ng-container *ngIf="i != singleMovie.directors.length-1">,</ng-container>
+            </span>
+           </div>
+
+           <div>
+            <span>Actors:</span>
+            <span *ngFor="let actor of singleMovie.actors; let i = index">
+             {{actor.name}}
+            <ng-container *ngIf="i != singleMovie.actors.length-1">,</ng-container>
+         </span>
+        </div>
+            <p class="card-text">{{singleMovie.descreption}}</p>
+        </div>
+    </div>
+</div>
