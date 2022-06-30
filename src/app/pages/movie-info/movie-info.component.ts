@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { GlobalService } from './../../services/global.service';
 import { ActivatedRoute } from '@angular/router';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-movie-info',
   templateUrl: './movie-info.component.html',
@@ -22,7 +23,8 @@ SchudleTime:any
       this.theaterID=data.data
       this.global.getMovieSchudleTime(this.theaterID,this.movieID).subscribe(data=>{
         this.SchudleTime=data
-        this.SchudleTime=this.SchudleTime.data
+        this.SchudleTime=this.SchudleTime.data.sechudleTime
+        console.log(this.SchudleTime)
       })
     })
 
@@ -31,5 +33,7 @@ SchudleTime:any
 
   ngOnInit(): void {
   }
-
+  bookTicket(){
+    // this.router.navigateByUrl('/user');
+  }
 }

@@ -2,3 +2,8 @@
     display: flex;
     /* flex: 1 1 auto; */
   }
+
+  .tickeStyle{
+    display:flex;
+    justify-content:space-around;
+  }
