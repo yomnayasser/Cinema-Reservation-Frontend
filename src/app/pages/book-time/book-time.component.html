@@ -1,0 +1,50 @@
+<div class="container">
+  <h2>{{deitals.name}}</h2>
+  <div class="container2">
+    <img
+    class="img"
+    src="http://localhost:3000/{{ deitals.image }}"
+    alt="Card image cap"
+  />
+  <div>
+    <div class="dropdown">
+      <button
+        class="btn btn-secondary dropdown-toggle"
+        type="button"
+        id="dropdownMenuButton1"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      >
+        Choose Date
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+        <li *ngFor="let d of date">
+          <a class="dropdown-item" href="#">{{ d }} 2022</a>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="dropdown">
+      <button
+        class="btn btn-secondary dropdown-toggle"
+        type="button"
+        id="dropdownMenuButton1"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      >
+        Choose Time
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+        <li *ngFor="let t of time">
+          <a class="dropdown-item" href="#">{{t.time}}</a>
+        </li>
+      </ul>
+      <a routerLink="/bookTicket/{{seatsNumber}}"><button class="btn btn-primary"> Next</button></a>
+    </div>
+  </div>
+
+  </div>
+ 
+ 
+  
+</div>

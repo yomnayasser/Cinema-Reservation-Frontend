@@ -24,8 +24,16 @@ export class GlobalService {
   }
 
   getMovieSchudleTime(theaterID:any, movieID:any){
-    return this.http.get(`${this.theaterPathUrl}getMovieSchudleTime/${theaterID}/${movieID}`)
+    return this.http.get(`${this.theaterPathUrl}getMovieSchudleTime/${theaterID}/${movieID}/3July`)
   }
 
+  getMovieDates(theaterID:any, movieID:any){
+    return this.http.get(`${this.theaterPathUrl}getMovieSchudleDate/${theaterID}/${movieID}`)
+  }
+
+  getMovieDeitals(movieID:any){
+    return this.http.get(`${this.moviePathUrl}getMovie/${movieID}`)
+  
+  }
 
 }

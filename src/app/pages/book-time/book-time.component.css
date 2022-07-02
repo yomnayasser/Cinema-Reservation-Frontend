@@ -1,0 +1,14 @@
+.dropdown{
+    margin: 20px;
+}
+
+.btn{
+    display:block;
+    margin:10px;
+}
+.img{
+    width: 15vw;
+}
+.container2{
+    display: flex;
+}

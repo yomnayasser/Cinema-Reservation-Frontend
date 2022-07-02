@@ -1,1 +1,14 @@
-<p>book-ticket works!</p>
+<div>
+  <h1 class="header">Screen</h1>
+  <hr>
+  <div class="seats">
+    <div *ngFor="let number of arr; let i=index "  class="block1">
+      <a routerLink="" class="linkBtn"><button class="btn btn-secondary" > {{i+1}}</button></a>
+    </div>
+
+    <div *ngFor="let number of arr2; let i=index " class="block2" >
+      <a routerLink=""><button class="btn btn-secondary" > {{number}}</button></a>
+    </div>
+  </div>
+   
+</div>

@@ -7,3 +7,7 @@
     display:flex;
     justify-content:space-around;
   }
+
+  .headers{
+    font-weight: bold;
+  }

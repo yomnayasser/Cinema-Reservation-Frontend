@@ -23,7 +23,7 @@
       </div>
 
       <div>
-        <span>Directors:</span>
+        <span class="headers">Directors:</span>
         <span *ngFor="let director of singleMovie.directors; let i = index">
           {{ director.name }}
           <ng-container *ngIf="i != singleMovie.directors.length - 1"
@@ -33,7 +33,7 @@
       </div>
 
       <div>
-        <span>Actors:</span>
+        <span class="headers">Actors:</span>
         <span *ngFor="let actor of singleMovie.actors; let i = index">
           {{ actor.name }}
           <ng-container *ngIf="i != singleMovie.actors.length - 1"
@@ -53,7 +53,7 @@
         </ng-container>
       </div>
       <div>
-        <a routerLink="/bookTicket"><button class="btn btn-primary" > Buy <i class="fas fa-ticket-alt"></i></button></a>
+        <a routerLink="/bookTime/{{theaterID}}/{{movieID}}"><button class="btn btn-primary" > Buy <i class="fas fa-ticket-alt"></i></button></a>
         <a href="{{singleMovie.trailer}}" target="_blank"><button type="button" class="btn btn-secondary">Play <i class="fas fa-play"></i></button></a>
         
       </div>

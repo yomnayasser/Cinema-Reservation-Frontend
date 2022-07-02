@@ -8,6 +8,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { MovieInfoComponent } from './pages/movie-info/movie-info.component';
 import { BookTicketComponent } from './pages/book-ticket/book-ticket.component';
 import { MovieCardComponent } from './compnents/movie-card/movie-card.component';
+import { BookTimeComponent } from './pages/book-time/book-time.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { MovieCardComponent } from './compnents/movie-card/movie-card.component'
     HomeComponent,
     MovieInfoComponent,
     BookTicketComponent,
-    MovieCardComponent
+    MovieCardComponent,
+    BookTimeComponent
   ],
   imports: [
     BrowserModule,
